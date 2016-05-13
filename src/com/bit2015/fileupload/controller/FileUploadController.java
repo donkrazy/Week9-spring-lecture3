@@ -24,7 +24,10 @@ public class FileUploadController {
 	}
 	
 	@RequestMapping( "/upload" )
-	public String upload( @RequestParam String email, @RequestParam( "file1" ) MultipartFile file1, Model model ) {
+	public String upload( 
+			@RequestParam String email,
+			@RequestParam( "file1" ) MultipartFile file1, 
+			Model model ) {
         
 		// 보통 파라미터의 값
 		LOG.debug( " ######## email : " + email );
